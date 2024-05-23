@@ -1,0 +1,30 @@
+<?php
+
+//index.php
+
+include '../database_connection.php';
+
+include '../function.php';
+
+if (!is_admin_login()) {
+	header('location:../admin_login.php');
+}
+?>
+
+<div class="container container-fluid py-5">
+	<?php
+	include '../header.php';
+
+	?>
+
+	<?php
+
+	include '../footer.php';
+
+	?>
+	<style>
+		.container {
+			background: pink;
+		}
+	</style>
+</div>
